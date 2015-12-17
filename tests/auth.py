@@ -113,7 +113,7 @@ class PublicCredentialsTest(unittest.TestCase):
             consumer_secret='secret'
         )
 
-        self.assertEqual(credentials.url, 'https://api.xero.com/oauth/Authorize?oauth_token=token')
+        self.assertEqual(credentials.url, 'https://sha2-api.xero.com/oauth/Authorize?oauth_token=token')
 
     @patch('requests.post')
     def test_verify(self, r_post):
